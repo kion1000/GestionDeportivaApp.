@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:padding="16dp"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/etNombreCobro"
+        android:hint="Nombre (Seguro, Cuota 1...)"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/etTemporada"
+        android:hint="Temporada (2025/26)"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/etImporteTotal"
+        android:hint="Importe total (€)"
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

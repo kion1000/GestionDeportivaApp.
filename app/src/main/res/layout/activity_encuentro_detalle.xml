@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:padding="16dp"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <!-- Cabecera del encuentro -->
+    <TextView
+        android:id="@+id/tvHeaderLinea1"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:textStyle="bold" android:textSize="18sp"
+        android:text="Fecha · vs. Rival" />
+    <TextView
+        android:id="@+id/tvHeaderLinea2"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Marcador · Competición · Lugar"
+        android:layout_marginBottom="8dp" />
+
+    <View android:layout_width="match_parent" android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+    <!-- Controles de alta rápida SIN minuto -->
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:layout_marginTop="8dp">
+
+        <!-- FILA: Gol -->
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="6dp">
+
+            <Spinner
+                android:id="@+id/spJugadorGol"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btnAddGol"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Añadir gol" android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <!-- FILA: Asistencia -->
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="6dp">
+
+            <Spinner
+                android:id="@+id/spJugadorAsist"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btnAddAsist"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Añadir asistencia" android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <!-- FILA: Tarjeta -->
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spJugadorTarjeta"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Spinner
+                android:id="@+id/spTipoTarjeta"
+                android:layout_width="110dp" android:layout_height="wrap_content"
+                android:layout_marginStart="8dp" />
+
+            <Button
+                android:id="@+id/btnAddTarjeta"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Añadir tarjeta" android:layout_marginStart="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Separador -->
+    <View android:layout_width="match_parent" android:layout_height="1dp"
+        android:layout_marginTop="8dp" android:background="?android:attr/listDivider" />
+
+    <!-- Lista de eventos -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvEventos"
+        android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1" android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btnGuardarStats"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Guardar estadísticas" />
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Mensaje guía -->
+    <TextView
+        android:id="@+id/tvHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1) Crea el cobro (Seguro / Cuota 1 / ...)\n2) Selecciónalo para ver quién ha pagado\n3) Pulsa en un jugador para registrar su abono"
+        android:textSize="14sp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Bloque superior: spinner + botones -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Fila 1: SOLO el spinner -->
+        <Spinner
+            android:id="@+id/spCobro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Fila 2: Botones (mismo ancho) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/btnNuevoCobro"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minWidth="0dp"
+                android:text="Nuevo cobro" />
+
+            <Button
+                android:id="@+id/btnRefrescar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minWidth="0dp"
+                android:layout_marginStart="8dp"
+                android:text="Refrescar" />
+
+            <Button
+                android:id="@+id/btnEliminarCobro"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minWidth="0dp"
+                android:layout_marginStart="8dp"
+                android:text="Eliminar" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Cabecera del cobro seleccionado -->
+    <TextView
+        android:id="@+id/tvHeaderCobro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sin cobro seleccionado"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Separador -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+    <!-- Lista -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvEstadoCobro"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp" />
+
+    <!-- Estado vacío (visible cuando no hay cobros) -->
+    <TextView
+        android:id="@+id/tvEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No hay cobros definidos todavía. Pulsa “Nuevo cobro”."
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="12dp" />
+
+</LinearLayout>

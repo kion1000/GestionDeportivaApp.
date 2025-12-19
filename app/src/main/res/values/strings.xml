@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Borgoñon</string>
+    <string name="nombre_completo_fmt">%1$s %2$s</string>
+    <string name="dorsal_fmt">Dorsal: %1$d</string>
+    <string name="posicion_fmt">Posición: %1$s</string>
+    <!-- Botón eliminar de cada tarjeta -->
+    <string name="eliminar">Eliminar</string>
+
+    <!-- Si usas Snackbar con acción -->
+    <string name="deshacer">DESHACER</string>
+    <string name="jugador_eliminado">Jugador eliminado</string>
+    <string name="accion_deshacer">Acción deshecha</string>
+
+    <!-- Accesibilidad para el escudo -->
+    <string name="escudo_equipo">Escudo del equipo</string>
+
+    <!-- Botón añadir jugador (si lo referiste desde XML) -->
+    <string name="anadir_jugador">Añadir jugador</string>
+    <string name="nombre_club">CLUB ATLÉTICO BORGOÑÓN</string>
+    <string name="tarjetas">tarjetas</string>
+
+</resources>

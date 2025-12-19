@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/ivFoto"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_jugador"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/tvNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre Apellido"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvDorsal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dorsal: 0"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/tvPosicion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Posición: X"
+        android:layout_gravity="center"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/tvTotales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Totales: G0 A0 €0.00"
+        android:layout_gravity="center"
+        android:layout_marginBottom="12dp"/>
+
+
+    <Button
+        android:id="@+id/btnPartidos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Partidos"/>
+
+    <Button
+        android:id="@+id/btnVerEstadisticas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver estadísticas"
+        android:layout_marginTop="8dp"/>
+
+
+    <Button
+        android:id="@+id/btnCuotas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cuotas"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btnEditar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Editar jugador"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Resumen rápido -->
+    <TextView
+        android:id="@+id/tvPartidosJugados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Partidos jugados: 0"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvCuotasResumen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Cuotas — Seguro: 0.00€ | 1ª: 0.00€ | 2ª: 0.00€ | 3ª: 0.00€"
+        android:layout_marginTop="4dp"/>
+
+
+
+</LinearLayout>

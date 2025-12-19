@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="16dp" android:orientation="vertical"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Encuentro del equipo"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"/>
+
+    <Spinner
+        android:id="@+id/spEncuentro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/etFecha"
+        android:focusable="false"
+        android:hint="Fecha (toca para elegir)"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etGoles"
+        android:inputType="number"
+        android:hint="Goles"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etAsist"
+        android:inputType="number"
+        android:hint="Asistencias"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+    <Spinner
+        android:id="@+id/spTarjetas"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

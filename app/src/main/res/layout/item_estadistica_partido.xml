@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:padding="12dp"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvFechaRival"
+        android:layout_width="0dp" android:layout_height="wrap_content"
+        android:layout_weight="2" />
+
+    <TextView
+        android:id="@+id/tvMarcador"
+        android:layout_width="0dp" android:layout_height="wrap_content"
+        android:layout_weight="1" android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/tvGoles"
+        android:layout_width="0dp" android:layout_height="wrap_content"
+        android:layout_weight="1" android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/tvAsist"
+        android:layout_width="0dp" android:layout_height="wrap_content"
+        android:layout_weight="1" android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/tvTarjetas"
+        android:layout_width="0dp" android:layout_height="wrap_content"
+        android:layout_weight="1" android:gravity="center_horizontal" />
+</LinearLayout>
