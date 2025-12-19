@@ -40,14 +40,14 @@ Hecha en **Java** con persistencia en **SQLite** (sin depender de internet). Por
 
 ## 🗂️ Estructura del proyecto (orientativa)
 
-app/
+```text 
 ├─ ui/ # Activities, adapters, pantallas
 ├─ data/ # DBHelper, queries, repositorios (si existen)
 ├─ model/ # Clases POJO: Jugador, Encuentro, Evento...
 └─ res/ # layouts, drawables, strings, etc.
 
 
----
+-```-
 
 ## 🛢️ Base de datos (SQLite)
 
